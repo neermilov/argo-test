@@ -1,0 +1,19 @@
+apiVersion: deckhouse.io/v1alpha1
+kind: DVPInstanceClass
+metadata:
+  name: worker
+spec:
+  rootDisk:
+    image:
+      kind: ClusterVirtualImage
+      name: ubuntu-24-04-lts
+    size: 50Gi
+    storageClass: replicated
+  virtualMachine:
+    bootloader: EFI
+    cpu:
+      coreFraction: 20%
+      cores: 4
+    memory:
+      size: 8Gi
+    virtualMachineClassName: amd-epyc-gen-3

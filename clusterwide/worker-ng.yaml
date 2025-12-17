@@ -1,0 +1,17 @@
+apiVersion: deckhouse.io/v1
+kind: NodeGroup
+metadata:
+  name: worker
+spec:
+  cloudInstances:
+    classReference:
+      kind: DVPInstanceClass
+      name: worker
+    maxPerZone: 5
+    minPerZone: 5
+  kubelet:
+    containerLogMaxFiles: 4
+    containerLogMaxSize: 50Mi
+    resourceReservation:
+      mode: Auto
+  nodeType: CloudEphemeral
