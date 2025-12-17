@@ -15,5 +15,5 @@ spec:
       coreFraction: 20%
       cores: 4
     memory:
-      size: 8Gi
+      size: 32Gi
     virtualMachineClassName: amd-epyc-gen-3
