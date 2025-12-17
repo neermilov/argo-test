@@ -1,7 +1,7 @@
 apiVersion: deckhouse.io/v1alpha1
 kind: DVPInstanceClass
 metadata:
-  name: worker
+  name: system
 spec:
   rootDisk:
     image:
@@ -13,7 +13,7 @@ spec:
     bootloader: EFI
     cpu:
       coreFraction: 20%
-      cores: 4
+      cores: 8
     memory:
       size: 8Gi
     virtualMachineClassName: amd-epyc-gen-3

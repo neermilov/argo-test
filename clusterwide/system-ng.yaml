@@ -1,12 +1,12 @@
 apiVersion: deckhouse.io/v1
 kind: NodeGroup
 metadata:
-  name: worker
+  name: system
 spec:
   cloudInstances:
     classReference:
       kind: DVPInstanceClass
-      name: worker
+      name: system
     maxPerZone: 1
     minPerZone: 1
   kubelet:
