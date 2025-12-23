@@ -13,7 +13,7 @@ spec:
     bootloader: EFI
     cpu:
       coreFraction: 20%
-      cores: 4
+      cores: 28
     memory:
       size: 110Gi
     virtualMachineClassName: amd-epyc-gen-3
