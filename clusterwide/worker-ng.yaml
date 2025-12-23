@@ -7,8 +7,8 @@ spec:
     classReference:
       kind: DVPInstanceClass
       name: worker
-    maxPerZone: 5
-    minPerZone: 5
+    maxPerZone: 3
+    minPerZone: 3
   kubelet:
     containerLogMaxFiles: 4
     containerLogMaxSize: 50Mi
